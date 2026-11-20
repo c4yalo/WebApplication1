@@ -14,6 +14,7 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(Program).Assembly));
 
 
 
